@@ -13,26 +13,26 @@ public class Question1{
 
 		SInput = Input;
 
-		SInt = parseInt(SInput);
+		SInt = SInt.parseInt(SInput);
 		System.out.println(SInput.length());
 
-		int[] array = new Int[SInt];
+		int[] array = new int[SInt];
 
-		if (array[0] )
+		if (array.length == 0  )
 		{
 			strOutput = 1;
 			System.out.println("Number of Chaacters: " + strOutput);
 
 		}
 
-		else if ( array[SInt] > 0)
+		else if ( array.length > 0)
 		{
 			++strOutput;
 			System.out.println("Number of Characters: " + strOutput);
 
 		}
 
-		else if (array[SInt - 1])
+		else if (array.length -1)
 		{
 			System.out.println("Number of Characters: " + strOutput);
 		}
