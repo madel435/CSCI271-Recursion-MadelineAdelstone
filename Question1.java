@@ -13,7 +13,7 @@ public class Question1{
 
 		SInput = Input.nextLine();
 
-		parseInt(SInput);
+		SInt = Integer.parseInt(SInput);
 		System.out.println(SInput.length());
 
 		int[] array = new int[SInt];
@@ -32,7 +32,7 @@ public class Question1{
 
 		}
 
-		else if (array[SInt]-1)
+		else if (array.length-1 == true)
 		{
 			System.out.println("Number of Characters: " + strOutput);
 		}
