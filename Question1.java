@@ -18,21 +18,21 @@ public class Question1{
 
 		int[] array = new int[SInt];
 
-		if (array.length == 0  )
+		if (array[] == 0  )
 		{
 			strOutput = 1;
 			System.out.println("Number of Chaacters: " + strOutput);
 
 		}
 
-		else if ( array.length > 0)
+		else if ( array[] > 0)
 		{
 			++strOutput;
 			System.out.println("Number of Characters: " + strOutput);
 
 		}
 
-		else if (array.length -1)
+		else if (array[] -1)
 		{
 			System.out.println("Number of Characters: " + strOutput);
 		}
