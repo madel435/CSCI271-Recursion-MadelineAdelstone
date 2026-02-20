@@ -19,14 +19,23 @@ int[] array = new Int[SInt];
 if (array[0] )
 {
 	strOutput = 1;
+	System.out.println(strOutput);
+
 }
 
 else if ( array[SInt] > 0)
 {
 	++strOutput;
+	System.out.println(strOutput);
+
 }
 
 else if (array[SInt - 1])
 {
- 
+	 System.out.println(strOutput);
+}
+
+else
+{
+	System.out.println("Something went wrong, please try again");
 }
