@@ -11,9 +11,9 @@ public class Question1{
 
 		System.out.println("Enter your string. ");
 
-		SInput = Input;
+		SInput = Input.nextLine();
 
-		SInt = SInt.parseInt(SInput);
+		parseInt(SInput);
 		System.out.println(SInput.length());
 
 		int[] array = new int[SInt];
@@ -32,7 +32,7 @@ public class Question1{
 
 		}
 
-		else if (array[SInt] -1)
+		else if (array[SInt]-1)
 		{
 			System.out.println("Number of Characters: " + strOutput);
 		}
