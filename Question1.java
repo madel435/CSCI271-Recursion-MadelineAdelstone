@@ -32,14 +32,9 @@ public class Question1{
 
 		}
 
-		else if (array.length-1 == true)
-		{
+		else 		{
 			System.out.println("Number of Characters: " + strOutput);
 		}
 
-		else
-		{
-			System.out.println("Something went wrong, please try again");
-		}
 	}
 }
