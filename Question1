@@ -1,42 +1,45 @@
 import java.util.Scanner; 
 
+public class Question1{
+	public stat void main(String[] args)
+	{
+		Scanner Input = new Scanner(System.in);
 
-Scanner Input = new Scanner(System.in);
+		string SInput;
+		int SInt; 
+		int strOutput = 0 ; 
 
-string SInput;
-int SInt; 
-int strOutput = 0 ; 
+		System.out.println("Enter your string. ");
 
-System.out.println("Enter your string. ");
+		SInput = Input; 
 
-SInput = Input; 
+		SInt = parseInt(SInput); 
+		System.out.println(SInput.length());
 
+		int[] array = new Int[SInt];
 
-SInt = parseInt(SInput); 
-System.out.println(SInput.length());
+		if (array[0] )
+		{
+			strOutput = 1;
+			System.out.println(strOutput);
 
-int[] array = new Int[SInt];
+		}
 
-if (array[0] )
-{
-	strOutput = 1;
-	System.out.println(strOutput);
+		else if ( array[SInt] > 0)
+		{
+			++strOutput;
+			System.out.println(strOutput);
 
-}
+		}
 
-else if ( array[SInt] > 0)
-{
-	++strOutput;
-	System.out.println(strOutput);
+		else if (array[SInt - 1])
+		{
+			System.out.println(strOutput);
+		}
 
-}
-
-else if (array[SInt - 1])
-{
-	 System.out.println(strOutput);
-}
-
-else
-{
-	System.out.println("Something went wrong, please try again");
+		else
+		{
+			System.out.println("Something went wrong, please try again");
+		}
+	}
 }
