@@ -1,12 +1,32 @@
+import java.util.Scanner; 
 
 
-string SInput
 Scanner Input = new Scanner(System.in);
 
-int SInt = parseInt(Input); 
-System.out.println(length());
+string SInput;
+int SInt; 
+int strOutput = 0 ; 
 
+System.out.println("Enter your string. ")
+SInput = Input; 
+
+
+SInt = parseInt(SInput); 
+System.out.println(SInput.length());
 
 int[] array = new Int[SInt];
 
+if (array[0] )
+{
+	strOutput = 1;
+}
 
+else if ( array[SInt] > 0)
+{
+	++strOutput;
+}
+
+else if (array[SInt - 1])
+{
+ 
+}
