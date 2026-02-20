@@ -5,10 +5,9 @@ public class Question1{
 	{
 		Scanner Input = new Scanner(System.in);
 
-		string SInput = "";
+		String SInput = "";
 		int SInt = 0 ;
 		int strOutput = 0 ;
-		int SInput = 0;
 
 		System.out.println("Enter your string. ");
 
