@@ -1,8 +1,12 @@
 
 
-
+string SInput
 Scanner Input = new Scanner(System.in);
 
+int SInt = parseInt(Input); 
+System.out.println(length());
 
 
-int[] array = new Int[SInt]
+int[] array = new Int[SInt];
+
+
