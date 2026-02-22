@@ -8,7 +8,7 @@ class Question2{
 			Scanner input = new Scanner(System.in);
 			
 			System.out.println("What is your word? ");
-			string UserIn = input.next();
+			String UserIn = input.next();
 
 			System.out.println("Word is : " + UserIn);
 
