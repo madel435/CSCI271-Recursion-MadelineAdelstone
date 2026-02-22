@@ -25,7 +25,7 @@ public class Question3{
 
 		NLeng = N.length + 1;
 
-		int Number[] = new int[NLeng]
+		int Number[] = new int[NLeng];
 		
 		int Number[] = N;
 
