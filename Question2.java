@@ -18,7 +18,7 @@ class Question2{
 				String UserWord = input.next();
 
 				System.out.println("What is your letter? ");
-				char UserLet = input.next();
+				char UserLet = input.nextChar();
 			}
 
 			else {
@@ -37,7 +37,7 @@ class Question2{
 
 				else if (UserLet == UserWord.charAt(count))
 				{
-					CharIN++;
+					CharIn++;
 					count++;
 				}
 
