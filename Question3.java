@@ -18,7 +18,7 @@ public class Question3{
 
 		System.out.println("Start typing the values, only integers please. ");
 
-		int A[Position] = input.nextInt();
+		A[Position] = input.nextInt();
 		Position++;
 
 		MaxValue = Arrays.asList().max();
