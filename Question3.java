@@ -2,17 +2,19 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.util.List;
 
+//Need something to break it to the start
+
 public class Question3{
-	public static void main(Strings[] args){
+	public static void main(String[] args){
 		Scanner input = new Scanner(System.in);
 		int NumIn = 1;
 		int Position = 0;
 		int MaxValue = 0;
 
-
 		System.out.println("How many integers will you be inputting ?");
 
 		NumIn = input.nextInt();
+
 
 		int A[] = new int[NumIn];
 
@@ -21,7 +23,7 @@ public class Question3{
 		A[Position] = input.nextInt();
 		Position++;
 
-		MaxValue = Arrays.asList().max();
+		MaxValue = Arrays.stream(A).max().getAsInt();
 
 		System.out.println("The max value is : " + MaxValue);
 	}
