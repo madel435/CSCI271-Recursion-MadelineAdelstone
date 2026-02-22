@@ -5,22 +5,49 @@ import java.util.Scanner;
 class Question2{
 	public static void main(String[] args)
 		{
-			Scanner input = new Scanner(System.in);
-			
-			System.out.println("What is your word? ");
-			String UserIn = input.next();
+			int Control = 1;
 
-			System.out.println("Word is : " + UserIn);
+			if (Control == 1 )
+			{
+
+				int count = 0;
+
+				Scanner input = new Scanner(System.in);
+
+				System.out.println("What is your word? ");
+				String UserWord = input.next();
+
+				System.out.println("What is your letter? ");
+				char UserLet = input.next();
+			}
+
+			else {
+				if (UserWord.length - 1)
+				{
+				 	CharIn++;
+					count = 0;
+					System.out.println("The letter " + UserLet + "shows up in the word " + UserWord + count +"times");
+
+				}
+
+				else if (UserLet != UserWord.charAt(count))
+				{
+					//break;
+				}
+
+				else if (UserLet == UserWord.charAt(count))
+				{
+					CharIN++;
+					count++;
+				}
+
+				else
+				{
+					System.out.println("Something went wrong please try again");
+				}
+			}
 
 
 
-
-
-		}
-
-
-
-
-
-
+	}
 }
