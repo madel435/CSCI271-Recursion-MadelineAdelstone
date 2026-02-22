@@ -5,24 +5,30 @@ import java.util.Scanner;
 public class Question2{
 	public static void main(String[] args)
 		{
-			int Control = 1;
+			int Control = 1 ;
+			int count = 0 ;
+			int CharIn = 1;
+			char UserLet = ' ';
+			int UserWLeng = 1;
+			String UserWord = " ";
 
 			if (Control == 1 )
 			{
 
-				int count = 0;
-
 				Scanner input = new Scanner(System.in);
 
 				System.out.println("What is your word? ");
-				String UserWord = input.next();
+				UserWord = input.next();
 
 				System.out.println("What is your letter? ");
-				char UserLet = input.nextChar();
+				UserLet = input.next().charAt(0);
+
 			}
 
-			else {
-				if (UserWord.length - 1)
+			else if (Control == UserWLeng) {
+				{
+				UserWLeng = UserWord.length() - 1;
+				if (Control == UserWLeng)
 				{
 				 	CharIn++;
 					count = 0;
