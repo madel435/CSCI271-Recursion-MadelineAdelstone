@@ -2,8 +2,6 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.util.List;
 
-//Need something to break it to the start
-
 public class Question3{
 	public static void main(String[] args){
 		Scanner input = new Scanner(System.in);
@@ -13,54 +11,55 @@ public class Question3{
 		int i = 0;
 		
 		System.out.println("How many integers will you be inputting ?");
-
 		NumIn = input.nextInt();
-
-
 		int A[] = new int[NumIn];
 
 		System.out.println("Start typing the values, only integers please. ");
+		Getting(NumIn,Position,A[]);
+	
+		Max(MaxValue,Position,i);
+		System.out.println("The max value is : " + MaxValue);
+		
+		
+
 		
 		void Getting(Position,A[]){
-			if (Position <= NumIn){
-			A[Position] = input.nextInt();
-			Position++;
-			Getting();
+				if (Position <= NumIn){
+				A[Position] = input.nextInt();
+				Position++;
+				Getting();
+				}
+
+				else {
+				System.out.println("Something went wrong in function Getting");
+				}
 		}
-			else {
-			System.out.println("Something went wrong in function Getting");
-			}
-}
 		
-int Max(){
+	int Max()
+	{
+		if(MaxValue<=A[i]){
+			MaxValue == A[i];
+			i++;
+			Max();
+		}
 
-if(MaxValue<=A[i]){
-MaxValue == A[i];
-i++;
-}
-
-}
-
-else if (MaxValue > A[i]){
-i++;
-
+		else if (MaxValue > A[i])
+		{
+			i++;
+			Max();
+		}
+		
+		
+		else if(Position == i)
+		{
+			return MaxValue;
+		}
+			
+		else 
+		{
+			System.out.println("There was something wrong in the function Max()");
+		}
+	}
 	
 }
-Max();
-else if(Position == i)
-{
-return MaxValue;
-}
-else 
-{
-System.out.println("There was something wrong in the function Max()");
-}
 
-
-
-
-MaxValue = Arrays.stream(A).max().getAsInt();
-
-		System.out.println("The max value is : " + MaxValue);
-	}
-}
