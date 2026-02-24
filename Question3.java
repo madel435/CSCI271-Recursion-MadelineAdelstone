@@ -15,16 +15,18 @@ public class Question3{
 		int A[] = new int[NumIn];
 
 		System.out.println("Start typing the values, only integers please. ");
-		Getting(Position,NumIn,A,input);
+		Getting(Position, NumIn, A, input);
 	
-		Max(MaxValue,Position,i);
+		MaxValue = Max(i,MaxValue,Position,A);
 		System.out.println("The max value is : " + MaxValue);
+
+		input.close();
 	}
 	public static void Getting(int Position,int NumIn, int[] A, Scanner input){
-				if (Position <= NumIn){
+				if (Position < NumIn){
 					A[Position] = input.nextInt();
 					Position++;
-					Getting();
+					Getting(Position + 1, NumIn,A, input);
 				}
 
 				else {
@@ -32,31 +34,28 @@ public class Question3{
 				}
 		}
 		
-	public static void Max(int i, int MaxxValue,int[]A)
+	public static int Max(int i, int MaxValue,int Position, int[]A)
 		{
-			if(MaxValue<= A[i]){
+			if(Position == i)
+			{
+				return MaxValue;
+			}
+			else if(MaxValue<= A[i]){
 				MaxValue = A[i];
-				i++;
-				Max();
+				return Max(i+1,MaxValue,Position,A );
 			}
 
 			else if(MaxValue > A[i])
 			{
-				i++;
-				Max();
+				return Max(i+1, MaxValue, Position, A);
 			}
 				
-			else if(Position == i)
-			{
-				return MaxValue;
-			}
-			
 			else 
 			{
 				System.out.println("There was something wrong in the function Max()");
+				return 1; 
 			}
 		}
-	}
-}
+
 
 
