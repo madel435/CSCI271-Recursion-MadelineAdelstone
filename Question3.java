@@ -19,47 +19,41 @@ public class Question3{
 	
 		Max(MaxValue,Position,i);
 		System.out.println("The max value is : " + MaxValue);
-		
-		
-
-		
-		void Getting(Position,A[]){
+			
+	public static void Getting(){
 				if (Position <= NumIn){
-				A[Position] = input.nextInt();
-				Position++;
-				Getting();
+					A[Position] = input.nextInt();
+					Position++;
+					Getting();
 				}
 
 				else {
-				System.out.println("Something went wrong in function Getting");
+					System.out.println("Something went wrong in function Getting");
 				}
 		}
 		
-	int Max()
-	{
-		if(MaxValue<=A[i]){
-			MaxValue == A[i];
-			i++;
-			Max();
-		}
+	public static void Max()
+		{
+			if(MaxValue<=A[i]){
+				MaxValue == A[i];
+				i++;
+				Max();
+			}
 
-		else if (MaxValue > A[i])
-		{
-			i++;
-			Max();
-		}
-		
-		
-		else if(Position == i)
-		{
-			return MaxValue;
-		}
+			else if(MaxValue > A[i])
+			{
+				i++;
+				Max();
+			}
+				
+			else if(Position == i)
+			{
+				return MaxValue;
+			}
 			
-		else 
-		{
-			System.out.println("There was something wrong in the function Max()");
+			else 
+			{
+				System.out.println("There was something wrong in the function Max()");
+			}
 		}
-	}
 	
-}
-
