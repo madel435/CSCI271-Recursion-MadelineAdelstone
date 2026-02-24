@@ -15,12 +15,12 @@ public class Question3{
 		int A[] = new int[NumIn];
 
 		System.out.println("Start typing the values, only integers please. ");
-		Getting(NumIn,Position,A[]);
+		Getting(Position,NumIn,A,input);
 	
 		Max(MaxValue,Position,i);
 		System.out.println("The max value is : " + MaxValue);
 	}
-	public static void Getting(){
+	public static void Getting(int Position,int NumIn, int[] A, Scanner input){
 				if (Position <= NumIn){
 					A[Position] = input.nextInt();
 					Position++;
@@ -32,9 +32,9 @@ public class Question3{
 				}
 		}
 		
-	public static void Max()
+	public static void Max(int i, int MaxxValue,int[]A)
 		{
-			if(MaxValue<=A[i]){
+			if(MaxValue<= A[i]){
 				MaxValue = A[i];
 				i++;
 				Max();
@@ -57,4 +57,5 @@ public class Question3{
 			}
 		}
 	
+
 
