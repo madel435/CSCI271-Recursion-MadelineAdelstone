@@ -16,21 +16,27 @@ public class Question3{
 
 		System.out.println("Start typing the values, only integers please. ");
 		Getting(Position, NumIn, A, input);
-	
+	    Position = NumIn;
 		MaxValue = Max(i,MaxValue,Position,A);
 		System.out.println("The max value is : " + MaxValue);
 
 		input.close();
 	}
+	
 	public static void Getting(int Position,int NumIn, int[] A, Scanner input){
-				if (Position < NumIn){
+				if(Position < 0 )
+				{ 
+				    System.out.println("Something went wrong in function Getting");
+	            }
+	            
+				else if(Position < NumIn){
 					A[Position] = input.nextInt();
-					Position++;
-					Getting(Position + 1, NumIn,A, input);
+					
+					Getting(Position+1, NumIn,A, input);
 				}
 
 				else {
-					System.out.println("Something went wrong in function Getting");
+				    return;
 				}
 		}
 		
@@ -56,6 +62,6 @@ public class Question3{
 				return 1; 
 			}
 		}
-
+	}
 
 
