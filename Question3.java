@@ -56,6 +56,7 @@ public class Question3{
 				System.out.println("There was something wrong in the function Max()");
 			}
 		}
-	
+	}
+}
 
 
