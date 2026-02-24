@@ -19,7 +19,7 @@ public class Question3{
 	
 		Max(MaxValue,Position,i);
 		System.out.println("The max value is : " + MaxValue);
-			
+	}
 	public static void Getting(){
 				if (Position <= NumIn){
 					A[Position] = input.nextInt();
@@ -35,7 +35,7 @@ public class Question3{
 	public static void Max()
 		{
 			if(MaxValue<=A[i]){
-				MaxValue == A[i];
+				MaxValue = A[i];
 				i++;
 				Max();
 			}
@@ -57,3 +57,4 @@ public class Question3{
 			}
 		}
 	
+
