@@ -9,14 +9,16 @@ public class Question1{
 		int SInt = 0 ;
 		int strOutput = 0 ;
 
-		System.out.println("Enter your string. ");
+		System.out.println("Enter your string: ");
 
 		SInput = Input.nextLine();
 
-		SInt = Integer.parseInt(SInput);
+		SInt = SInput.length() - 1;
 		System.out.println(SInput.length());
 
-		int[] array = new int[SInt];
+		int[] array = new int[SInt + 1];
+
+
 
 		if (array[SInt] == 0  )
 		{
@@ -35,6 +37,6 @@ public class Question1{
 		else 		{
 			System.out.println("Number of Characters: " + strOutput);
 		}
-
+		Input.close();
 	}
 }

@@ -19,11 +19,25 @@ public class Question3{
 		int A[] = new int[NumIn];
 
 		System.out.println("Start typing the values, only integers please. ");
+		
+		void Getting(Position,A[]){
+			if (Position <= NumIn){
+			A[Position] = input.nextInt();
+			Position++;
+			Getting();
+		}
+			else {
+			System.out.println("Something went wrong in function Getting");
+			}
+}
+		
+int Max(){
 
-		A[Position] = input.nextInt();
-		Position++;
+}
 
-		MaxValue = Arrays.stream(A).max().getAsInt();
+
+
+MaxValue = Arrays.stream(A).max().getAsInt();
 
 		System.out.println("The max value is : " + MaxValue);
 	}
