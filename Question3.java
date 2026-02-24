@@ -10,7 +10,8 @@ public class Question3{
 		int NumIn = 1;
 		int Position = 0;
 		int MaxValue = 0;
-
+		int i = 0;
+		
 		System.out.println("How many integers will you be inputting ?");
 
 		NumIn = input.nextInt();
@@ -33,7 +34,28 @@ public class Question3{
 		
 int Max(){
 
+if(MaxValue<=A[i]){
+MaxValue == A[i];
+i++;
 }
+
+}
+
+else if (MaxValue > A[i]){
+i++;
+
+	
+}
+Max();
+else if(Position == i)
+{
+return MaxValue;
+}
+else 
+{
+System.out.println("There was something wrong in the function Max()");
+}
+
 
 
 
