@@ -21,9 +21,12 @@ public class Question3{
                 N = input.nextInt();
 
                 System.out.println("Start typing the value to check, only a number from 0-9 please. ");
-		D = input.nextInt();
-
-		NLeng = N.length + 1;
+		
+		int GetNum(D,NLeng){
+			D = input.nextInt();
+			NLeng = N.length + 1;
+			GetNum(D,NLeng);
+		}
 
 		int Number[] = new int[NLeng];
 		
