@@ -1,0 +1,2 @@
+How many integers will you be inputting ?
+Start typing the values, only integers please. 
