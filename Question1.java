@@ -32,33 +32,35 @@ public class Question1
 	{
 		public static void main(String[] args)
 		{
-		Scanner Input = new Scanner(System.in); //Scanner to take input
-
-		String S = ""; //String S take from user
-		int SInt = 0 ; //Put the length here for array
-		int strOutput = 0 ; // Actual number of character
-		System.out.println("Enter your string. "); //Asking user for string
-
-		S = Input.nextLine(); //Taking from user 
-
-		SInt = S.length() - 1; //Array start from 0 so must decrease length with 1 
-		System.out.println(S.length()); //Printing out the length inputted
-
-		int[] array = new int[SInt + 1]; //Allocating the array space
-
-		if (array[SInt] == 0 ) //if the array size is ==0 then run 
-		{
-			strOutput = 1; //Sets it to one
-			System.out.println("Number of Chaacters: " + strOutput); // Outputs the number of characters then one
-		
-		else if ( array[SInt] > 0) //if it is greater than 0 than run
-		{
-			++strOutput; //increases the strOutput
-			System.out.println("Number of Characters: " + strOutput); // Outputs the number of characters which will be in strOuput
-		}	
-		else
-		{
-			System.out.println("There was an issue "); //Error statement 
-		}
+			Scanner Input = new Scanner(System.in); //Scanner to take input
+	
+			String S = ""; //String S take from user
+			int SInt = 0 ; //Put the length here for array
+			int strOutput = 0 ; // Actual number of character
+			System.out.println("Enter your string. "); //Asking user for string
+	
+			S = Input.nextLine(); //Taking from user 
+	
+			SInt = S.length() - 1; //Array start from 0 so must decrease length with 1 
+			System.out.println(S.length()); //Printing out the length inputted
+	
+			int[] array = new int[SInt + 1]; //Allocating the array space
+	
+			if (array[SInt] == 0 ) //if the array size is ==0 then run 
+			{
+				strOutput = 1; //Sets it to one
+				System.out.println("Number of Chaacters: " + strOutput); // Outputs the number of characters then one
 			
-		Input.close();//Closes scanner 
+			else if ( array[SInt] > 0) //if it is greater than 0 than run
+			{
+				++strOutput; //increases the strOutput
+				System.out.println("Number of Characters: " + strOutput); // Outputs the number of characters which will be in strOuput
+			}	
+			else
+			{
+				System.out.println("There was an issue "); //Error statement 
+			}
+				
+			Input.close();//Closes scanner 
+		}
+	}
