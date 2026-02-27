@@ -49,8 +49,6 @@ System.out.println("What is your string?"); // ask user for string
 S = input.next(); //getting string 
 
 array = S.split(''); // splits the S to input into array 
-
-int 
 if(Position == 0){ //If it is first position run 
 
 	newarray[Position] = array[Slength - 1]; // setting the new array to the old array making sure due to legnth being one less thant the amount of spos
@@ -63,5 +61,6 @@ System.out.println(newarray[]); //pringint the array
 
 int printS(Position,newarray[],array[]); //calling the function again to run 
 }
+
 
 
