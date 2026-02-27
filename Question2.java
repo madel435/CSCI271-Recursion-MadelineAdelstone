@@ -38,8 +38,8 @@ public class Question2
         Scanner input = new Scanner(System.in);//Scanner to recieive input
 
 		int count = 0; //incrimentor 
-        int sameLet = 0; //Checks how many times the letter matches
-       
+	        int sameLet = 0; //Checks how many times the letter matches
+
 		char C = ' '; //Char that it is checked against
 		String S = " ";//String that is checked
 
@@ -57,7 +57,7 @@ public class Question2
 	
     public static void SinC(char C, String S,int sameLet,int count) 
     {
-        if (count <= S.length()) //if count is less than the lenght of s 
+        if (count <= S.length() -1) //if count is less than the lenght of s 
         {
             if (C == S.charAt(count))  //Checking if C matches the letter in the count position if so continue
             {

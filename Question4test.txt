@@ -1,0 +1,5 @@
+Type your number now, please only one large whole number. Must be less than 9,223,372,036,854,775,807.
+Start typing the value to check, only a number from 0-9 please. 
+N = 32923456789
+D = 2
+D appears in N 2 times

@@ -1,0 +1,3 @@
+What is your word? 
+What is your letter? 
+The letter h shows up in the word hello 1 times
