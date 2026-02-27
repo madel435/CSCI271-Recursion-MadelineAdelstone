@@ -32,6 +32,9 @@
 
 import java.util.Scanner;
 
+public class Question5{
+
+
 Scanner input = new Scanner(System.in) //SCanner 
 String S = " "; //S the first string
 String S' = " ";//S the second string that is changed
@@ -64,3 +67,4 @@ int printS(Position,newarray[],array[]); //calling the function again to run
 
 
 
+	
