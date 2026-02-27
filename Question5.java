@@ -1,4 +1,18 @@
-//NVM couldn't find it 
+/*************************************************************************
+* Project 3 for CSCI 271-001 Spring 2026
+*
+* Author: Madeline Adelstone
+* OS: Windows 11
+* Compiler: javac 25.0.1
+* Date: February 24, 2026
+*
+* Purpose
+* Write a JAVA program that reads in a string S from the user and displays it backwards. The
+*program must use a recursive function that takes S as an argument and returns S' as S but
+*backwards. Solutions to this question using a loop are not acceptable! In addition, calculate the
+*running time of this function and show your work in details.
+*
+*************************************************************************/
 
 import java.util.Scanner;
 
@@ -32,3 +46,4 @@ System.out.println(newarray[]);
 
 int printS(Position,newarray[],array[]);
 }
+
