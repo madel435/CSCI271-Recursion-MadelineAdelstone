@@ -1,8 +1,19 @@
+/*************************************************************************
+* Project 3 for CSCI 271-001 Spring 2026
+*
+* Author:Madeline Adelstone
+* OS: Windows 11
+* Compiler: javac 25.0.1
+* Date:Feburary 24,2026
+*
+* Purpose
+*Write a JAVA program that reads in an integer N and a single digit D from the user and displays
+*the number of times D occurs in N. The program will use a recursive function that takes N and D
+*as arguments and returns the number of times D appears in N recursively! here are few examples:
+*
+*************************************************************************/
 import java.util.Scanner;
 import java.util.Arrays;
-import java.util.List;
-
-//Need something to break it to the start
 
 public class Question3{
         public static void main(String[] args){
@@ -50,6 +61,7 @@ public class Question3{
 
         }
 }
+
 
 
 
