@@ -13,20 +13,16 @@
 *addition, calculate the running time of this function and show your work in details.
 *
 *************************************************************************/
-
-
-import java.util.Scanner; 
-
-public class Question1{
-	public static void main(String[] args)
+public class Question1
 	{
+		public static void main(String[] args)
+		{
 		Scanner Input = new Scanner(System.in);
 
 		String SInput = "";
 		int SInt = 0 ;
 		int strOutput = 0 ;
-
-		System.out.println("Enter your string: ");
+		System.out.println("Enter your string. ");
 
 		SInput = Input.nextLine();
 
@@ -35,25 +31,19 @@ public class Question1{
 
 		int[] array = new int[SInt + 1];
 
-
-
-		if (array[SInt] == 0  )
+		if (array[SInt] == 0 )
 		{
 			strOutput = 1;
 			System.out.println("Number of Chaacters: " + strOutput);
-
-		}
-
+		
 		else if ( array[SInt] > 0)
 		{
 			++strOutput;
 			System.out.println("Number of Characters: " + strOutput);
-
-		}
-
-		else 		{
+		}	
+		else
+		{
 			System.out.println("Number of Characters: " + strOutput);
 		}
+			
 		Input.close();
-	}
-}
