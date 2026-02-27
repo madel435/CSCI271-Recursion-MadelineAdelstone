@@ -28,56 +28,55 @@
 *
 * Madeline Adelstone 
 *************************************************************************/
+
 import java.util.Scanner;
 
-public class Question2{
+public class Question2
+{
 	public static void main(String[] args)
-		{
-			int Control = 1 ;
-			int count = 0 ;
-			int CharIn = 1;
-			char C = ' ';
-			int UserWLeng = 1;
-			String S = " "; //Users string
+	{
+        Scanner input = new Scanner(System.in);//Scanner to recieive input
 
-			if (Control == 1 )
-			{
+		int count = 0 ; //incrimentor 
+        int sameLet = 0; //Checks how many times the letter matches
+       
+		char C = ' '; //Char that it is checked against
+		String S = " ";//String that is checked
 
-				Scanner input = new Scanner(System.in); //Scanner to take in string 
+		System.out.println("What is your word? "); //Asking user for word
+		S = input.next();//Getting word
 
-				System.out.println("What is your word? "); //asks for Users string
-				S = input.next(); // takes Users string
+		System.out.println("What is your letter? ");//Askinf for letter
+		C = input.next().charAt(0);' //Getting letter
 
-				System.out.println("What is your letter? ");//Asking for users char
-				C = input.nect().charAt(0) //getting char
-			}
+        SinC(C,S,sameLet,count); //Calling function of S in C
 
-			else if (Control == UserWLeng)
-			{ 
-				UserWLeng = UserWord.length() - 1;
-				if (Control == UserWLeng)
-				{
-				 	CharIn++;
-					count = 0;
-					System.out.println("The letter " + UserLet + "shows up in the word " + UserWord + count +"times");
+		input.close(); //closing scanner
+    }
 
-				}
+	
+    public static void SinC(char C, String S,int sameLet,int count) 
+    {
+        if (count <= S.length()) //if count is less than the lenght of s 
+        {
+            if (C == S.charAt(count))  //Checking if C matches the letter in the count position if so continue
+            {
+                sameLet++; //inreases the same letter 
+                count++; //increases the count
+                System.out.println("The letter " + C + " shows up in the word " + S + " " + sameLet +" times"); //prints the outcome
+                SinC(C,S,sameLet,count);//calls again
+            }
 
-				else if (UserLet != UserWord.charAt(count))
-				{
-					//break;
-				}
+            else if (C != S.charAt(count)) //C does not match the S letter at c position if it does not tgen 
+            {
+                count++; //Just increase count
+                SinC(C,S,sameLet,count); //calls again 
+            }
+        }
 
-				else if (UserLet == UserWord.charAt(count))
-				{
-					CharIn++;
-					count++;
-				}
-
-				else
-				{
-					System.out.println("Something went wrong please try again");
-				}
-			}
-	}
+        else if (count > S.length()) // if the count is greater than S something went wrong 
+        {
+            System.out.println("Something went wrong please try again");
+        }
+    }
 }
