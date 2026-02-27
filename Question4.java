@@ -28,6 +28,8 @@
 * Madeline Adelstone
 * <Student's WID>
 *************************************************************************/
+
+
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -50,7 +52,24 @@ public class Question3{
  
                 System.out.println("Start typing the value to check, only a number from 0-9 please. "); //Geting the D to check
 				D	=	input.next();
-
+/*****************************<Function Name>****************************
+* Description: a brief description of what the function does.
+*
+* Parameters: a list each parameter the function takes
+*
+* Pre: list the preconditions; i.e., the things that must be true
+* before the function is called. Usually these involve whether
+* and how parameters must be initialised before the call, etc.
+*
+* Post: List the postconditions; i.e., the things that are guaranteed
+* to be true when the function finishes, assuming that the
+* listed preconditions are satisfied.
+*
+* Returns: Describe what value the function returns, if any.
+*
+* Called by: list the name(s) of the function(s) that call this one.
+* Calls: list the name(s) of the function(s) that this one calls.
+************************************************************************/
 		int GetNum(D,NLeng){
 			D = input.nextInt();
 			NLeng = N.length + 1;
@@ -78,6 +97,7 @@ public class Question3{
 
         }
 }
+
 
 
 
