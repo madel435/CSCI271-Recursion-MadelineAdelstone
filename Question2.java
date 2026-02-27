@@ -28,7 +28,6 @@
 *
 * Madeline Adelstone 
 *************************************************************************/
-
 import java.util.Scanner;
 
 public class Question2{
@@ -37,25 +36,24 @@ public class Question2{
 			int Control = 1 ;
 			int count = 0 ;
 			int CharIn = 1;
-			char UserLet = ' ';
+			char C = ' ';
 			int UserWLeng = 1;
-			String UserWord = " ";
+			String S = " "; //Users string
 
 			if (Control == 1 )
 			{
 
-				Scanner input = new Scanner(System.in);
+				Scanner input = new Scanner(System.in); //Scanner to take in string 
 
-				System.out.println("What is your word? ");
-				UserWord = input.next();
+				System.out.println("What is your word? "); //asks for Users string
+				S = input.next(); // takes Users string
 
-				System.out.println("What is your letter? ");
-				UserLet = input.next().charAt(0);
-
+				System.out.println("What is your letter? ");//Asking for users char
+				C = input.nect().charAt(0) //getting char
 			}
 
-			else if (Control == UserWLeng) {
-				{
+			else if (Control == UserWLeng)
+			{ 
 				UserWLeng = UserWord.length() - 1;
 				if (Control == UserWLeng)
 				{
@@ -81,8 +79,5 @@ public class Question2{
 					System.out.println("Something went wrong please try again");
 				}
 			}
-
-
-
 	}
 }
