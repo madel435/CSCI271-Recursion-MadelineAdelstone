@@ -35,7 +35,7 @@ import java.util.Scanner;
 public class Question5{
 public static void main(String[] args){
 	
-		Scanner input = new Scanner(System.in) //SCanner 
+		Scanner input = new Scanner(System.in); //SCanner 
 		String S = " "; //S the first string
 		String S' = " ";//S the second string that is changed
 		int SLength = 0; // The length of S 
@@ -69,4 +69,5 @@ public static void main(String[] args){
 
 
 	
+
 
