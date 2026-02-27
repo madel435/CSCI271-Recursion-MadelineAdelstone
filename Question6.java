@@ -30,40 +30,77 @@ Write a JAVA program that reads a list of integers from the keyboard and stores 
 * <MAdeline Adelstone
 * <Student's WID>
 ************************************************************************/
+import java.util.Scanner; //scanner
 
+public class Question6{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in); //scanner for input
 
+        int NumIn = 0; //sets the array 
+        int SumValue = 0; //total sum
+        int Position = 0; //position for getting
+	int count = 0;//count for the sumeven increments
 
-import java.util.Scanner;
-import java.util.Arrays;
-import java.util.List;
+        System.out.println("How many integers will you be inputting ?"); //asking how many integers
 
-//Need something to break it to the start
+        NumIn = input.nextInt(); //gets the Num In ans sets the array
 
-public class Question3{
-        public static void main(String[] args){
-                Scanner input = new Scanner(System.in);
-
-                int NumIn = 0;
-                int SumValue = 0;
-                int Position = 0;
-
-                System.out.println("How many integers will you be inputting ?");
-
-                NumIn = input.nextInt();
-
-                int A[] = new int[NumIn];
-
-                System.out.println("Start typing the values, only integers please. ");
-
-                A[Position] = input.nextInt();
-                Position++;
-
-                SumValue = Arrays.stream(A).sumEven();
-
-                System.out.println("Sum is  : " + SumValue);
+        int A[] = new int[NumIn]; //Creating the array and allocating space
+		
+        System.out.println("Start typing the values, only integers please. "); //asking for integers 
+		
+        Getting(Position,NumIn,A,input); //calling getting 
+        sumEven(count,NumIn,SumValue,A);//calling sum even 
+		
+		input.close(); //closes scanner
+    }
+        
+    public static void Getting(int Position, int NumIn, int[] A, Scanner input)
+    {
+         if(Position < NumIn)// if position is less than numin 
+		{ 
+            A[Position] = input.nextInt(); //Adds to the array adds to the currenct pisiont 
+            Position++;//Position increases 
+	    Getting(Position,NumIn,A,input);//calling function agian 
+        }
+		else if ((Position < 0) || (Position > NumIn)) // prints error
+        {
+            System.out.println("Something went wrong in function Getting"); //error prints 
         }
 }
-
-
-
-
+		
+    public static void sumEven(int count,int NumIn, int SumValue, int[]A )
+    {
+        if (count >= 0 && count < NumIn )// if count is greater than o and less than NumIn 
+        {
+           if (count == 0 && A[count] % 2 == 0) //if count is equal to zero and even then  runn
+            {
+                SumValue += A[count]; // adds the value at count position to sumvalue 
+                count++; //increase count 
+                sumEven(count, NumIn,SumValue,A); //calls function 
+            }
+            else if( A[count] % 2 == 0) //If the value of at count poition is even then run 
+            {
+                SumValue += A[count]; //Adds the value at count position to SumValue 
+                count++;//Increases count
+                sumEven(count, NumIn,SumValue,A); //Calls function
+            }
+           else if( A[count] % 2 == 1) //If the value of at count poition is even then run 
+            {
+                count++;//Increases count
+                sumEven(count, NumIn,SumValue,A); //Calls function
+            }
+            else 
+            {
+                count++; //Increases count
+                sumEven(count,NumIn,SumValue,A); //Calls function
+                System.out.println("Sum is: " + SumValue);//prints the sumvalue
+            }
+        }
+        else if (count < 0 || count > NumIn )
+        {
+            System.out.println("Something went wrong in sumEven function");//Printing error 
+        }    
+    }
+}
