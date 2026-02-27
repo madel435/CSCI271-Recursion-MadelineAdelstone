@@ -48,18 +48,21 @@ public class Question1{
 		int[] array = new int[SInt]; //cretes new array makes space of length of S
 		array[] = SInt; //Puts the length inside 
 
-		
+		StringOutput(array,SInt, strOuput);
+
+	public static void StringOutput(int[]array,int SInt,int strOutput)
+		{
 		if (array[SInt] == 0  ) //if there is only one character 
 		{
 			strOutput = 1; //sets number ourput to 1
 			System.out.println("Number of Chaacters: " + strOutput); //Prints the number of characters
-
+			StringOutput(array,SInt, strOutput)
 		}
 		else if ( array[SInt] > 0) //If the is more characters
 		{ 
 			++strOutput; //increases the number of characters
 			System.out.println("Number of Characters: " + strOutput); //Prints the number of characters
-
+			StringOutput(array,SInt, strOuput)
 		}
 
 		else 		{
