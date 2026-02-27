@@ -33,38 +33,40 @@
 import java.util.Scanner;
 
 public class Question5{
-
-
-Scanner input = new Scanner(System.in) //SCanner 
-String S = " "; //S the first string
-String S' = " ";//S the second string that is changed
-int SLength = 0; // The length of S 
-int Position = 0;  //The pistion in array 
-
-SLength = S.length(); //the string length 
-
-
-String[] array = new array[SLength]; // create the array make the space for the length of s
-String[] newarray = new newarray[SLength]; //create the will be edited array make the space for the length of s
-
-System.out.println("What is your string?"); // ask user for string
-
-S = input.next(); //getting string 
-
-array = S.split(''); // splits the S to input into array 
-if(Position == 0){ //If it is first position run 
-
-	newarray[Position] = array[Slength - 1]; // setting the new array to the old array making sure due to legnth being one less thant the amount of spos
-	Position++; //increating pisiton
-	System.out.println(newarray[]); // priting the new aarray
+public static void main(String[] args){
+	
+		Scanner input = new Scanner(System.in) //SCanner 
+		String S = " "; //S the first string
+		String S' = " ";//S the second string that is changed
+		int SLength = 0; // The length of S 
+		int Position = 0;  //The pistion in array 
+		
+		SLength = S.length(); //the string length 
+		
+		String[] array = new array[SLength]; // create the array make the space for the length of s
+		String[] newarray = new newarray[SLength]; //create the will be edited array make the space for the length of s
+		
+		System.out.println("What is your string?"); // ask user for string
+		
+		S = input.next(); //getting string 
+		
+		array = S.split(''); // splits the S to input into array 
+		
+		if(Position == 0){ //If it is first position run 
+		
+			newarray[Position] = array[Slength - 1]; // setting the new array to the old array making sure due to legnth being one less thant the amount of spos
+			Position++; //increating pisiton
+			System.out.println(newarray[]); // priting the new aarray
+		}
+		 else {
+			newarray[Position] = array[SLength - 1]; // setting the array
+			System.out.println(newarray[]); //pringint the array 
+			
+			int printS(Position,newarray[],array[]); //calling the function again to run 
+		}
+	}
 }
- else {
-newarray[Position] = array[SLength - 1]; // setting the array
-System.out.println(newarray[]); //pringint the array 
-
-int printS(Position,newarray[],array[]); //calling the function again to run 
-}
-
 
 
 	
+
