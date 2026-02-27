@@ -37,7 +37,7 @@ public class Question2
 	{
         Scanner input = new Scanner(System.in);//Scanner to recieive input
 
-		int count = 0 ; //incrimentor 
+		int count = 0; //incrimentor 
         int sameLet = 0; //Checks how many times the letter matches
        
 		char C = ' '; //Char that it is checked against
@@ -47,7 +47,7 @@ public class Question2
 		S = input.next();//Getting word
 
 		System.out.println("What is your letter? ");//Askinf for letter
-		C = input.next().charAt(0);' //Getting letter
+		C = input.next().charAt(0); //Getting letter
 
         SinC(C,S,sameLet,count); //Calling function of S in C
 
